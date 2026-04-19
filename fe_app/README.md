@@ -202,3 +202,22 @@ Files prefixed with `demo` can be safely deleted. They are there to provide a st
 You can learn more about all of the offerings from TanStack in the [TanStack documentation](https://tanstack.com).
 
 For TanStack Start specific documentation, visit [TanStack Start](https://tanstack.com/start).
+
+# Docker Compose
+
+You can run the frontend app in a container using Docker Compose:
+
+```bash
+docker compose up --build
+```
+
+This will build the Docker image and start the app at http://localhost:3000.
+
+- The container serves the production build using Nginx.
+- Static files from the `public` folder are mounted read-only.
+
+To stop and remove the containers:
+
+```bash
+docker compose down
+```

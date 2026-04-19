@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  fe_app:
+    build: .
+    container_name: fe_app
+    ports:
+      - "3000:80"
+    volumes:
+      - ./public:/usr/share/nginx/html/public:ro
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
