@@ -1,0 +1,9 @@
+- Set up 2 api docker containers
+- Push them to registry
+- Set react app docker container
+- Create container apps for api containers
+- Create container apps for FE app with easy auth enabled
+- Create cosmosdb
+- Set up managed identity to allow api apps to talk to cosmos
+- Create api management and put 2 apis under it
+- Set up api management to allow auth from secrets and from azure entra users behalf
